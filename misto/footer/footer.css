@@ -175,6 +175,7 @@ span {
 .trust-badges {
   display: flex;
   list-style: none;
+  padding-left: 0;
 }
 
 .badge__item + .badge__item {

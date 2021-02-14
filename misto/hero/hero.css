@@ -1,0 +1,114 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --dark: #121212;
+  --grey: #e5e5e5;
+  --gr-white: #f8f8f8;
+  --gr-form: #414141;
+  --sale: #e91e63;
+  --yellow: #f0cc84;
+  --error: #d61313;
+  --ok: #0bb17f;
+}
+
+body {
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+  min-height: 100vh;
+  background: var(--grey);
+}
+
+img {
+  max-width: 100%;
+  /* display: block; */
+}
+
+h6,
+ul,
+p,
+span {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  background: var(--white);
+  padding: 2em;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0em 2em;
+  grid-template-areas:
+    'banner banner women men'
+    'banner banner accessories accessories';
+}
+
+.hero-banner {
+  grid-area: banner;
+}
+.banner-text {
+  grid-area: banner;
+  text-align: center;
+  font-size: 1.375rem;
+}
+.banner-text-light {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 13.44px;
+  letter-spacing: 0.06em;
+  opacity: 0.4;
+}
+
+.hero-women {
+  grid-area: women;
+}
+.women-text {
+  grid-area: women;
+}
+
+.hero-men {
+  grid-area: men;
+}
+.men-text {
+  grid-area: men;
+}
+
+.hero-accessories {
+  grid-area: accessories;
+  margin-bottom: -1.6em;
+}
+.access-text {
+  grid-area: accessories;
+}
+
+.hero-text-overlay {
+  justify-self: center;
+  align-self: center;
+  padding: 0.75em 1.5em;
+  background: var(--white);
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  color: var(--dark);
+  border-radius: 4px;
+}
